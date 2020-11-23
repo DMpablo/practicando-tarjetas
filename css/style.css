@@ -1,0 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+
+body {
+
+    font-family: 'Comfortaa', cursive;
+    margin: 8px;
+    background-color: rgb(3, 129, 146);
+    font-weight: 800%;
+}
+
+/* paginia inicio */
+
+.general{
+   
+
+    max-width: 800px;
+    width: 800%;
+/*     height: 300px; */
+    background-color: rgb(247, 247, 247);
+    margin: 0 auto;
+    margin-top: 10%;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 0 20px rgb(5, 4, 7);
+    flex-direction: row;
+    transition: background-color 1s;
+    flex-wrap: wrap;
+     /*  align-items: flex-start ;  */ /*  eje secundario (vertica Y ) */
+    
+    
+}
+
+.general:hover {
+
+    background-color: rgb(145, 141, 141);
+}
+.general:hover .tarjeta{
+
+    background-color: rgb(145, 141, 141);
+    
+}
+.general:hover .tarjeta:hover {
+    
+    background-color: rgba(219, 214, 214, 0.356);
+    cursor: pointer;
+     
+    
+}
+.general:hover .iconos{
+    background-color: rgba(250, 250, 250, 0);
+}
+.general:hover .precio-numero {
+    color: rgba(255, 255, 255, 0.445);
+}
+.general:hover .titulo-item{
+    color: rgba(255, 255, 255, 0.445);
+}
+.general:hover .signo-pesos{
+
+    color: rgba(255, 255, 255, 0.445);
+}
+.general:hover .precio-item{
+
+    color: rgba(255, 255, 255, 0.445);
+}
+.general:hover .lorem{
+    color: rgb(56, 56, 56);
+}
+
+
+.tarjeta {
+
+   
+
+    
+
+ 
+    background-color:rgb(247, 247, 247);
+    flex: 1 1 200px;
+    padding: 1rem 1rem 4rem;
+    text-align: center;
+    position: relative;
+    transition: background-color 1s;
+  /*   margin: 2px;
+     */
+  
+}
+.tarjeta .iconos {
+    padding: 1rem;
+    border-radius: 50%; 
+    border: 1px solid black;
+   /*  font-weight: 300;
+    width: 40px; */
+}
+.tarjeta .titulo-item {
+    color: rgb(0, 69, 78);
+    text-transform: uppercase;
+}
+.tarjeta .signo-pesos{
+
+    font-size: small;
+}
+.tarjeta .precio-numero {
+    
+
+    font-size: x-large;
+}
+.tarjeta .precio-item {
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(0, 69, 78);
+    margin-bottom: 30px;
+    font-weight: 500;
+
+}
+.tarjeta .link {
+
+    text-decoration: none;
+}
+.tarjeta .lorem {
+
+    color: gray;
+    font-weight: 100;
+}
+
+
+.tarjeta:hover .titulo-item {
+    color: rgb(240, 240, 240);
+}
+.tarjeta:hover .signo-pesos{
+    color: rgb(240, 240, 240);
+    font-size: small;
+}
+.tarjeta:hover .precio-item {
+    color: rgb(240, 240, 240);
+    font-weight: 800;
+  
+}
+.tarjeta:hover .precio-numero {
+    color: rgb(240, 240, 240);
+    font-size: x-large;
+}
+.tarjeta:hover .lorem {
+/*     font-size: large; */
+color: rgb(240, 240, 240);
+
+}
+.tarjeta:hover .iconos{
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+
+@media screen and (max-width: 480px){
+    
+    .body{
+        align-items: center;
+    }
+
+    .general{
+
+        flex-direction: column;
+        width: 80%;
+
+      }            
+}
+/* @media screen and (min-width: 480px) and (max-width:  750px){
+    
+    .body{
+        align-items: center;
+    }
+
+    .general{
+
+        height: 80px;
+
+      }            
+} */
+
+
+
+/* links individuales */
+
+.tarjetasola {
+
+    background-color:rgba(247, 247, 247, 0);
+    flex: 1 1 200px;
+    padding: 1rem 1rem 4rem;
+    text-align: center;
+    position: relative;
+    transition: background-color 1s;
+  
+}
+.tarjetasola .link {
+    color: rgb(0, 69, 78);
+   
+    text-decoration: none;
+   
+}
+.tarjetasola .titulo-item {
+    color: rgb(0, 69, 78);  
+    font-weight: 600;
+}
+.tarjetasola .precio-item {
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(0, 69, 78);
+    font-weight: 500;
+
+}
+.tarjetasola .lorem {
+    margin-top: 40px;
+    color: gray;
+    font-weight: 100;
+}
+.tarjetasola .iconos {
+
+    font-weight: 300;
+    width: 150px;
+    margin: 40px;
+}
+.tarjetasola .signo-pesos{
+    color: rgb(0, 69, 78);
+    font-size: small;
+}
+.tarjetasola .precio-numero {
+    
+    color: rgb(0, 69, 78);
+    font-size: x-large;
+}
+
+.general:hover .link {
+    color: rgb(240, 240, 240);
+}
+
+.general:hover .lorem {
+    color: rgb(240, 240, 240);
+}
+
+
+
+
+
+
+
